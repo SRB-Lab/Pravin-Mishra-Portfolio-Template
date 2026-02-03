@@ -39,4 +39,18 @@ Add this line (example):
 <p><strong>Deployed by:</strong> DMI Cohort 2 | Rahul Sharma | Group 4 | Week 1 | 16-01-2026</p>
 ```
 
+Make Deploy Date Dynamic (using Beginner-friendly JS):
+* Add a <span id="deployDate"></span> in footer where date goes
+* Add JS that sets today’s date in DD Mon YYYY format
+
+```html
+<p>Pravin Mishra Portfolio v1.0 — Deployed on <span id="deployDate"> 03 Feb 2026 </span> — By Suganya Rani Balasundaram</Student></p>
+
+<script>
+    const d = new Date();
+    const formattedDate = d.toISOString().split('T')[0];
+    document.getElementById("deployDate").textContent = formattedDate;
+</script>
+```
+
 ✅ This proof must be visible in your browser screenshot submission.
