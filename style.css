@@ -1126,6 +1126,8 @@ section {
   gap: 10px;
   color: #888;
   font-size: 14px;
+  line-height: 1.6;
+  margin: 8px 0;            /* Margin: creates breathing room between lines */
 }
 
 .footer-bottom span {
