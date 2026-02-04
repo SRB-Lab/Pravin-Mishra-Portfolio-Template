@@ -1119,8 +1119,12 @@ section {
 /* Bottom */
 .footer-bottom {
   border-top: 1px solid #222;
+  width: 100%;             /* Use the full width of the screen */
+  box-sizing: border-box;  /* Ensures padding doesn't "push" the width out */
   padding-top: 20px;
+  overflow: hidden;        /* Prevents accidental scrollbars */
   display: flex;
+  align-items: center;     /* Center content */
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 10px;
